@@ -9,9 +9,13 @@ It is useful to give the growth of time/space-complexity of a problem. E. g. fli
 
 ## Usage of the functions of ack.py
 Let the one-variable ack is x-1 from x=1.
+
 Let the two-variable ack is the same as defined by Ackermann.
+
 Let the multi-variable acks are defined like in the ack.py, in general formulas:
+
 ack(x_1, x_2, ..., x_{n-1}, x_n) = ack( x_1-1, x_2, ..., x_{n-1}, ack( x_1, x_2-1, x_3, ..., x_{n-1}, ack( x_1, ... ...( x_1, ..., x_{n-1}, x_n-1 ) ... ) ) )
+
 In words: we embed n-variable functions itself to the right place, and in the i-th depth we get x_i-1 instead of x_i. That is it.
 
 ## Open questions
